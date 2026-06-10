@@ -1,70 +1,26 @@
 # 📌 Post-it
 
-Plugin para Claude que genera un resumen visual tipo nota adhesiva de la conversación en curso. Pensado para conversaciones largas donde se pierde de vista lo importante.
+A Claude plugin that generates a visual sticky-note summary of the ongoing conversation. Built for long threads where the important stuff slips out of view.
 
-Escribe `/postit` y Claude relee todo lo hablado y devuelve una nota escaneable con 3-5 puntos clave: **decisiones tomadas**, **datos importantes** y **próximos pasos**. Si la conversación cubre varios temas, genera hasta 3 post-its, uno por tema.
+Type `/postit` and Claude re-reads everything discussed and returns a scannable note with 3–5 key points: **decisions made**, **key data**, and **next steps**. If the conversation covers several topics, it generates up to 3 post-its, one per topic.
 
-## Instalación
+## Installation
 
-### En Claude Code
+### In Claude Code
 
 ```bash
-# Añadir el marketplace
+# Add the marketplace
 /plugin marketplace add hianadee/postit
 
-# Instalar el plugin
+# Install the plugin
 /plugin install postit@anadee
 ```
 
-### En Claude.ai
+### In Claude.ai
 
-1. Clona el repo y ejecuta `./build.sh` (genera `dist/postit.plugin`), o descarga el `.plugin` desde Releases.
-2. Sube el archivo en **Settings → Capabilities → Plugins**.
+1. Clone the repo and run `./build.sh` (generates `dist/postit.plugin`), or download the `.plugin` from Releases.
+2. Upload the file in **Settings → Capabilities → Plugins**.
 
-## Uso
+## Usage
 
-En cualquier momento de la conversación:
-
-```
-/postit
-```
-
-También responde a peticiones naturales como *"resume la conversación en un post-it"* o *"dame el post-it"*.
-
-### Qué devuelve
-
-Una nota visual con cada punto etiquetado por tipo:
-
-- **Decisión:** acuerdos cerrados, opciones elegidas, cosas descartadas
-- **Dato:** cifras, fechas, nombres, URLs o parámetros que conviene no perder
-- **Siguiente:** acciones pendientes, con responsable si se mencionó
-
-Sin relleno: si la conversación es corta o no hay decisiones aún, resume el tema y el estado actual.
-
-## Estructura
-
-```
-postit/
-├── .claude-plugin/
-│   ├── plugin.json        # Metadatos del plugin
-│   └── marketplace.json   # Para instalación desde GitHub
-├── skills/
-│   └── postit/
-│       └── SKILL.md       # Lógica del skill
-├── build.sh               # Empaqueta el .plugin para Claude.ai
-└── README.md
-```
-
-## Configuración
-
-No requiere conectores, variables de entorno ni configuración adicional.
-
-## Roadmap
-
-- [ ] Modo incremental (`/postit delta`): resumir solo desde el último post-it
-- [ ] Filtros por tipo: `/postit pendientes`, `/postit decisiones`, `/postit datos`
-- [ ] Export/persistencia: copiar como texto, guardar en Notion
-
-## Licencia
-
-MIT — [Ana Dee](https://anadee.es)
+At any point in the conversation:
