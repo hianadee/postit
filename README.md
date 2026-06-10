@@ -36,7 +36,7 @@ A visual note with each point labeled by type:
 
 No filler: if the conversation is short or there are no decisions yet, it summarizes the topic and current state.
 
-## Structure
+```
 postit/
 ├── .claude-plugin/
 │   ├── plugin.json        # Plugin metadata
@@ -46,6 +46,8 @@ postit/
 │       └── SKILL.md       # Skill logic
 ├── build.sh               # Packages the .plugin for Claude.ai
 └── README.md
+```
+
 ## Configuration
 
 No connectors, environment variables, or additional setup required.
