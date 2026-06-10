@@ -1,0 +1,13 @@
+{
+  "name": "postit",
+  "version": "0.1.0",
+  "description": "Genera un post-it visual con lo esencial de la conversación: decisiones, datos clave y próximos pasos.",
+  "author": {
+    "name": "Ana Dee",
+    "url": "https://anadee.es"
+  },
+  "homepage": "https://github.com/hianadee/postit",
+  "repository": "https://github.com/hianadee/postit",
+  "license": "MIT",
+  "keywords": ["resumen", "summary", "postit", "notas", "productividad"]
+}

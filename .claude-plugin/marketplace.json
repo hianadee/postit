@@ -1,0 +1,16 @@
+{
+  "name": "anadee",
+  "owner": {
+    "name": "Ana Dee",
+    "url": "https://anadee.es"
+  },
+  "plugins": [
+    {
+      "name": "postit",
+      "source": "./",
+      "description": "Genera un post-it visual con lo esencial de la conversación: decisiones, datos clave y próximos pasos.",
+      "version": "0.1.0",
+      "author": { "name": "Ana Dee" }
+    }
+  ]
+}
